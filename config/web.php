@@ -42,14 +42,14 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'GET api/books' => 'api/book/index',
+                'POST api/books' => 'api/book/create',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
