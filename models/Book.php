@@ -36,9 +36,8 @@ class Book extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['imageLink', 'link', 'created_at'], 'default', 'value' => null],
             [['author', 'country', 'language', 'pages', 'title', 'year'], 'required'],
-            [['pages', 'year', 'created_at'], 'integer'],
+            [['pages', 'year'], 'integer'],
             [['author', 'country', 'imageLink', 'language', 'link', 'title'], 'string', 'max' => 255],
         ];
     }
