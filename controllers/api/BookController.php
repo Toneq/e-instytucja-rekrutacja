@@ -8,6 +8,8 @@ use app\models\Book;
 
 class BookController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     public function behaviors()
     {
         $behaviors = parent::behaviors();
